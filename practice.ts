@@ -31,7 +31,9 @@ console.log(student);
 //interface
 
 interface Notifier {
-  SendNotification(message, address);
+  //message=string;
+  //address=string;
+  SendNotification(message, address); //at this stage, I am not responsible on what this function does
 }
 
 class Pollution {
@@ -40,14 +42,15 @@ class Pollution {
     ///
     ///
     if (pollution > 30) {
-      //send SMS
-      //send Email
+      //Send SMS
+      //Send Email
       n.SendNotification("", "");
     }
   }
 }
-//Client
 
+//Client
+//Client
 class SMSNotifier implements Notifier {
   SendNotification(message, address) {
     /// send sms
@@ -65,4 +68,6 @@ m.GetPollution(sms);
 
 let email = new EmailNotifier();
 let r = new Pollution();
+//email.message="xxx"
+//email.address="xxx@live.com"
 r.GetPollution(email);
