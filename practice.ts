@@ -71,3 +71,8 @@ let r = new Pollution();
 //email.message="xxx"
 //email.address="xxx@live.com"
 r.GetPollution(email);
+
+//import and export
+export class Test {
+  name: string;
+}
